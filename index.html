@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamir's Secret Sharing Algorithm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f9;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            resize: vertical;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            margin-bottom: 20px;
+            background-color: #ecf0f1;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #2980b9;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #2980b9;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .output-container {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .output-header {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Shamir's Secret Sharing Algorithm</h2>
+
+    <!-- Input Area for Test Case 1 JSON -->
+    <h3>Test Case 1 JSON Input</h3>
+    <textarea id="jsonInput1" rows="10" placeholder="Paste test case 1 JSON here..."></textarea>
+
+    <!-- Input Area for Test Case 2 JSON -->
+    <h3>Test Case 2 JSON Input</h3>
+    <textarea id="jsonInput2" rows="10" placeholder="Paste test case 2 JSON here..."></textarea>
+
+    <!-- Button to run the algorithm -->
+    <button onclick="processJSON()">Calculate Secret and Detect Wrong Points</button>
+
+    <!-- Output Area -->
+    <div class="output-container">
+        <h3 class="output-header">Output:</h3>
+        <pre id="output"></pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
